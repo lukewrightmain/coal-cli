@@ -59,15 +59,12 @@ tokio-tungstenite = "0.16"
 serde = { version = "1.0", features = ["derive"] }
 steel = "1.2"
 
-# [patch.crates-io]
-# drillx = { path = "../drillx/drillx" }
-# coal-api = { path = "../coal/api" }
-# coal-utils = { path = "../coal/utils" }
-# ore-api = { path = "../ore/api" }
-# ore-utils = { path = "../ore/utils" }
-# smelter-api = { path = "../smelter/api" }
-# smelter-utils = { path = "../smelter/utils" }
-# forge-api = { path = "../forge/api" }
-# forge-utils = { path = "../forge/utils" }
-# coal-guilds-api = { path = "../guilds/api" }
+[patch.crates-io]
+solana-program = { version = "1.18.26" }
+solana-sdk = { version = "1.18.26" }
+solana-client = { version = "1.18.26" }
+solana-cli-config = { version = "1.18.26" }
+solana-rpc-client = { version = "1.18.26" }
+solana-transaction-status = { version = "1.18.26" }
+solana-pubkey = { package = "solana-program", version = "1.18.26" }
 
