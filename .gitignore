@@ -1,2 +1,47 @@
-/target
-output.log
+
+# 🔒 never commit keys or local configs
+
+.config/
+
+**/id.json
+
+*.json
+
+
+
+# logs & junk
+
+*.log
+
+nohup.out
+
+
+
+# target build artifacts (keep only final binary you choose)
+
+target/
+
+!target/release/
+
+target/release/build/
+
+target/release/deps/
+
+target/release/.fingerprint/
+
+target/release/incremental/
+
+target/release/examples/
+
+target/release/coal.d/
+
+
+
+# mac/ide
+
+.DS_Store
+
+.vscode/
+
+.idea/
+
