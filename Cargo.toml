@@ -57,6 +57,14 @@ tokio-tungstenite = "0.16"
 serde = { version = "1.0", features = ["derive"] }
 steel = "1.2"
 
-[patch.crates-io]
-# Redirect solana-pubkey → solana-program to unify Pubkey types
-solana-pubkey = { package = "solana-program", version = "1.18.26" }
+[workspace]
+resolver = "2"
+
+[workspace.dependencies]
+# Force everything to use Solana 1.18.26 family
+solana-program = "1.18.26"
+solana-sdk = "1.18.26"
+solana-client = "1.18.26"
+solana-cli-config = "1.18.26"
+solana-rpc-client = "1.18.26"
+solana-transaction-status = "1.18.26"
